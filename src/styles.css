@@ -38,8 +38,8 @@ button:hover {
 
 .description {
   flex-grow: 1;
-  margin: 3rem;
-  background-color: aqua;
+  margin: 3rem 10rem;
+  background-color: rgba(122, 124, 242, 0.5);
 }
 
 footer > img {

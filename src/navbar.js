@@ -1,3 +1,7 @@
+import loadHome from "./home";
+import loadMenu from "./menu.js";
+import loadContact from "./contact";
+
 export default function navbar() {
   const navbar = document.createElement("div");
 
@@ -14,6 +18,10 @@ export default function navbar() {
   navbar.appendChild(home);
   navbar.appendChild(menu);
   navbar.appendChild(contact);
+
+  home.addEventListener("click", loadHome);
+  menu.addEventListener("click", loadMenu);
+  contact.addEventListener("click", loadContact);
 
   return navbar;
 }
