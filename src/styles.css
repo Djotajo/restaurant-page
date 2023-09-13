@@ -14,6 +14,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 5rem;
+  font-weight: bold;
   justify-content: center;
 }
 
@@ -36,10 +37,10 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.description {
+.currentTab {
   flex-grow: 1;
   margin: 3rem 10rem;
-  background-color: rgba(122, 124, 242, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer > img {
@@ -68,4 +69,42 @@ footer p {
 #githubLogo {
   width: 1.5em;
   height: auto;
+}
+
+#homeTab {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 2vh;
+  gap: 1vw;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#homeTab h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+#homeTab img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 70%;
+  align-self: center;
+  justify-self: center;
+}
+
+#homeImg {
+  height: 100%;
+  background-image: url("../assets/background02.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#homeTab :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

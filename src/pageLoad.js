@@ -4,13 +4,13 @@ import footer from "./footer";
 
 export default function pageLoad() {
   const content = document.querySelector("#content");
-  const description = document.createElement("div");
+  const currentTab = document.createElement("div");
 
-  description.classList.add("description");
-  description.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
+  currentTab.classList.add("currentTab");
+  currentTab.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
 
   content.appendChild(header());
   content.appendChild(navbar());
-  content.appendChild(description);
+  content.appendChild(currentTab);
   content.appendChild(footer());
 }
