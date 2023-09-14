@@ -175,9 +175,10 @@ footer p {
 .menuItem {
   border: 1px solid black;
   background-color: white;
-  transition: transform 0.7s ease-in-out;
+  overflow: hidden;
 }
 
-.menuItem:hover {
-  transform: rotate3d();
+.menuItem:hover svg {
+  transition: 1s;
+  transform: scale(1.1, 1.1);
 }
