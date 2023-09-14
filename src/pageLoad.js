@@ -1,6 +1,7 @@
 import header from "./header";
 import navbar from "./navbar";
 import footer from "./footer";
+import loadHome from "./home";
 
 export default function pageLoad() {
   const content = document.querySelector("#content");
@@ -13,4 +14,6 @@ export default function pageLoad() {
   content.appendChild(navbar());
   content.appendChild(currentTab);
   content.appendChild(footer());
+
+  loadHome();
 }

@@ -10,6 +10,7 @@ export default function loadContact() {
 
   location.setAttribute("id", "location");
   contacts.setAttribute("id", "contacts");
+  address.setAttribute("id", "address");
 
   contacts.innerHTML = `
   <div>
@@ -25,11 +26,22 @@ export default function loadContact() {
   </div>
   `;
 
+  address.innerHTML = `
+  <div>
+    <h1>Reservations</h1>
+    <p>Via email</p> <p>relaxreserve@taurant.com</p>
+    <p>Via phone</p> <p>987-654-321</p> <p>Please call between 15:00-20:00</p>
+  </div>
+  <div>
+  <h1>Other inquiries</h1>
+  <p>Via email</p> <p>justrelax@taurant.com</p>
+  <p>Via phone</p> <p>123-456-789</p> <p>Please call between 15:00-20:00</p>
+</div>
+  `;
+
   location.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6463.962982399942!2d14.507747618818424!3d35.89846898060367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e45281d8647c5%3A0x745ad38ee242c917!2sValletta%2C%20Malta!5e0!3m2!1sbs!2sba!4v1694621337918!5m2!1sbs!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 
   contactTab.appendChild(contacts);
   contactTab.appendChild(address);
   contactTab.appendChild(location);
-
-  console.log("contact speaking");
 }

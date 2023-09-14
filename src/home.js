@@ -23,11 +23,6 @@ export default function loadHome() {
   odio, id aliquam velit. Lorem ipsum dolor sit amet, consectetur
   adipiscing elit.</p>`;
 
-  // homeImg.innerHTML = `<img src="../assets/background02.jpg" />
-  // `;
-
   homeTab.appendChild(description);
   homeTab.appendChild(homeImg);
-
-  console.log("home speaking");
 }
