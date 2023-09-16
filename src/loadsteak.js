@@ -16,6 +16,7 @@ export default function loadSteak() {
           Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
           condimentum quis enim ac ornare. Protein vitae egestas arcu.
         </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -29,6 +30,7 @@ export default function loadSteak() {
             Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
             condimentum quis enim ac ornare. Protein vitae egestas arcu.
           </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -42,6 +44,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -55,6 +58,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -68,6 +72,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -81,6 +86,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -94,6 +100,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -107,6 +114,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
     {
       img: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -120,6 +128,7 @@ export default function loadSteak() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$15",
     },
   ];
 
@@ -127,7 +136,8 @@ export default function loadSteak() {
     const foodImg = document.createElement("div");
     const foodDescription = document.createElement("div");
     foodImg.innerHTML = element.img;
-    foodDescription.innerHTML = element.title + element.description;
+    foodDescription.innerHTML =
+      element.title + element.description + element.price;
     steaks.appendChild(foodImg);
     steaks.appendChild(foodDescription);
   });

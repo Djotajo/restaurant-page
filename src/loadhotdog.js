@@ -15,6 +15,7 @@ export default function loadHotdog() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -27,6 +28,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -39,6 +41,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -51,6 +54,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -63,6 +67,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -75,6 +80,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -87,6 +93,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -99,6 +106,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
     {
       img: `
@@ -111,6 +119,7 @@ export default function loadHotdog() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$5",
     },
   ];
 
@@ -118,7 +127,8 @@ export default function loadHotdog() {
     const foodImg = document.createElement("div");
     const foodDescription = document.createElement("div");
     foodImg.innerHTML = element.img;
-    foodDescription.innerHTML = element.title + element.description;
+    foodDescription.innerHTML =
+      element.title + element.description + element.price;
     hotdogs.appendChild(foodImg);
     hotdogs.appendChild(foodDescription);
   });

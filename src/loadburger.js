@@ -18,6 +18,7 @@ export default function loadBurger() {
             Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
             condimentum quis enim ac ornare. Protein vitae egestas arcu.
           </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -33,6 +34,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -48,6 +50,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -63,6 +66,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -78,6 +82,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -93,6 +98,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -108,6 +114,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -123,6 +130,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
     {
       img: `
@@ -138,6 +146,7 @@ export default function loadBurger() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$20",
     },
   ];
 
@@ -145,7 +154,8 @@ export default function loadBurger() {
     const foodImg = document.createElement("div");
     const foodDescription = document.createElement("div");
     foodImg.innerHTML = element.img;
-    foodDescription.innerHTML = element.title + element.description;
+    foodDescription.innerHTML =
+      element.title + element.description + element.price;
     burgers.appendChild(foodImg);
     burgers.appendChild(foodDescription);
   });

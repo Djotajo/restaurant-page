@@ -15,6 +15,7 @@ export default function loadDessert() {
               Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
               condimentum quis enim ac ornare. Protein vitae egestas arcu.
             </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -27,6 +28,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -39,6 +41,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -51,6 +54,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -63,6 +67,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -75,6 +80,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -87,6 +93,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -99,6 +106,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
     {
       img: `
@@ -111,6 +119,7 @@ export default function loadDessert() {
                 Integer odio ex, hendrerit nec leo vel, aliquam aliquet elit. Praesent
                 condimentum quis enim ac ornare. Protein vitae egestas arcu.
               </p>`,
+      price: "$10",
     },
   ];
 
@@ -118,7 +127,8 @@ export default function loadDessert() {
     const foodImg = document.createElement("div");
     const foodDescription = document.createElement("div");
     foodImg.innerHTML = element.img;
-    foodDescription.innerHTML = element.title + element.description;
+    foodDescription.innerHTML =
+      element.title + element.description + element.price;
     desserts.appendChild(foodImg);
     desserts.appendChild(foodDescription);
   });

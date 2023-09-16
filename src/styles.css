@@ -140,7 +140,7 @@ footer p {
 
 #contacts > :nth-child(1) > :nth-child(2) {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
 }
