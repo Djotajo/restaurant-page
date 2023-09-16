@@ -1,3 +1,5 @@
+import loadFood from "./loadfood";
+
 export default function loadMenu() {
   const menuTab = document.querySelector(".currentTab");
   menuTab.innerHTML = "";
@@ -35,6 +37,7 @@ export default function loadMenu() {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menuItem");
     menuItem.innerHTML = `${items[item]}`;
+    menuItem.addEventListener("click", loadFood);
     menuTab.appendChild(menuItem);
   }
 }

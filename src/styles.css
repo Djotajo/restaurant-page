@@ -182,3 +182,25 @@ footer p {
   transition: 1s;
   transform: scale(1.1, 1.1);
 }
+
+#foods {
+  overflow: auto;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: min-content;
+  gap: 1vh;
+  padding: 1vh;
+  color: white;
+}
+
+#foods svg {
+  width: 100px;
+  height: 100px;
+}
+
+#foods p {
+  margin: 0;
+}
