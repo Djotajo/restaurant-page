@@ -1,4 +1,10 @@
 import loadFood from "./loadfood";
+import loadBurger from "./loadburger";
+import loadSteak from "./loadsteak";
+import loadChicken from "./loadchicken";
+import loadDessert from "./loaddessert";
+import loadNoodles from "./loadnoodles";
+import loadHotdog from "./loadhotdog";
 
 export default function loadMenu() {
   const menuTab = document.querySelector(".currentTab");
@@ -17,7 +23,7 @@ export default function loadMenu() {
         <path d="M22 13C22 14.11 21.11 15 20 15H4C2.9 15 2 14.11 2 13S2.9 11 4 11H13L15.5 13L18 11H20C21.11 11 22 11.9 22 13M12 3C3 3 3 9 3 9H21C21 9 21 3 12 3M3 18C3 19.66 4.34 21 6 21H18C19.66 21 21 19.66 21 18V17H3V18Z" />
       </svg>
       `,
-    drumstick: `
+    chicken: `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Chicken</title><path d="M20.16 12.73C22.93 9.96 22.57 5.26 19.09 3C17.08 1.67 14.39 1.66 12.36 2.97C10.6 4.1 9.63 5.86 9.46 7.68C9.33 9 8.83 10.23 7.91 11.15L7.88 11.18C6.72 12.34 6.72 14.11 7.81 15.19L8.8 16.18C9.89 17.27 11.66 17.27 12.75 16.18C13.72 15.21 15 14.68 16.39 14.53C17.76 14.38 19.1 13.78 20.16 12.73M6.26 19.86C6.53 20.42 6.44 21.1 5.97 21.56C5.39 22.15 4.44 22.15 3.85 21.56C3.58 21.29 3.44 20.94 3.42 20.58C3.06 20.56 2.71 20.42 2.44 20.15C1.85 19.56 1.85 18.61 2.44 18.03C2.9 17.57 3.59 17.47 4.14 17.74L6.62 15.31C6.76 15.5 6.92 15.72 7.1 15.9L8.09 16.89C8.3 17.09 8.5 17.26 8.76 17.41L6.26 19.86Z" /></svg>
     `,
     noodles: `
@@ -26,7 +32,7 @@ export default function loadMenu() {
     hotdog: `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hot-Dogs</title><path d="M21 5.77C20.85 5.65 20.72 5.55 20.59 5.45L20.62 5.41C21.4 4.63 21.4 3.37 20.62 2.59C19.84 1.81 18.58 1.81 17.79 2.59L17.05 3.33C15.68 2.3 13.74 2.4 12.5 3.65L3.65 12.5C2.4 13.74 2.3 15.68 3.33 17.05L2.59 17.79C1.8 18.58 1.8 19.84 2.59 20.62C3.37 21.4 4.63 21.4 5.41 20.62L5.45 20.59C5.55 20.72 5.65 20.85 5.77 21C7.13 22.34 9.35 22.34 10.72 21L20.97 10.72C22.34 9.35 22.34 7.14 21 5.77M4.77 15.61C4.5 15.05 4.6 14.36 5.06 13.9L13.9 5.06C14.36 4.6 15.05 4.5 15.61 4.77L4.77 15.61M19.56 9.3L9.3 19.56C8.72 20.15 7.77 20.15 7.18 19.56C6.6 19 6.6 18 7.18 17.44L17.44 7.18C18 6.6 19 6.6 19.56 7.18C20.15 7.77 20.15 8.72 19.56 9.3Z" /></svg>
       `,
-    croissant: `
+    dessert: `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Desserts</title><path d="M22,19L19,17L22,15V19M15,15L19,9L22,13L18,16L15,15M5,17L2,19V15L5,17M9,15L6,16L2,13L5,9L9,15M14,6L18,8L13,15H11L6,8L10,6H14Z" /></svg>
       `,
   };
@@ -37,7 +43,20 @@ export default function loadMenu() {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menuItem");
     menuItem.innerHTML = `${items[item]}`;
-    menuItem.addEventListener("click", loadFood);
+    console.log(item);
+    if (item === "steak") {
+      menuItem.addEventListener("click", loadSteak);
+    } else if (item === "burger") {
+      menuItem.addEventListener("click", loadBurger);
+    } else if (item === "chicken") {
+      menuItem.addEventListener("click", loadChicken);
+    } else if (item === "noodles") {
+      menuItem.addEventListener("click", loadNoodles);
+    } else if (item === "hotdog") {
+      menuItem.addEventListener("click", loadHotdog);
+    } else if (item === "dessert") {
+      menuItem.addEventListener("click", loadDessert);
+    }
     menuTab.appendChild(menuItem);
   }
 }

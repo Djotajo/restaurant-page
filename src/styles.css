@@ -204,3 +204,7 @@ footer p {
 #foods p {
   margin: 0;
 }
+
+#foods svg path {
+  fill: white;
+}
