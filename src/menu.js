@@ -43,7 +43,6 @@ export default function loadMenu() {
     const menuItem = document.createElement("div");
     menuItem.classList.add("menuItem");
     menuItem.innerHTML = `${items[item]}`;
-    console.log(item);
     if (item === "steak") {
       menuItem.addEventListener("click", loadSteak);
     } else if (item === "burger") {
